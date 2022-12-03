@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Stint+Ultra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.title-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.title-container p {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-navigation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    display: flex;
+    min-width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto';
+}
+
+nav button:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.input-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.input-container .input-search {
+    height: 40px;
+    width: 300px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 20px;
+    font-family: 'Poppins';
+}
+
+.input-container .bi {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 35px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    text-align: center;
+    margin: 100px 0 50px 0;
+}
+
+.form-container { 
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form {
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 ;
+    padding-left: 10px;
+}
+
+.input-large-form {
+    width: 100%;
+    height: 150px;
+    font-family: 'Roboto';
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0 ;
+    padding: 10px 0 0 10px;
+    
+    resize: none;
+}
+
+form {
+    width: 100%;
+}
+
+form button {
+    width: 100%;
+    height: 45px;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Poppins';
+}

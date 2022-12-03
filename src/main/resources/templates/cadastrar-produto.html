@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrar-produtos.css">
+    <title>Cadastrar novo produto</title>
+</head>
+<body>
+    <header>
+        <div class="title-container">
+            <p>ZIFRA
+                <BR />SPORTS</p>
+        </div>
+
+        <nav class="header-navigation">
+            <a href="index.html"><button>HOME</button></a>
+            <a href="contato.html">
+
+                <button>CONTATO</button>
+            </a>
+            <a href="cadastrar-produtos.html">
+               <button>CADASTRAR PRODUTO</button> 
+            </a>
+
+            <div class="input-container">~
+                <input type="text" placeholder="Pesquisa algo ..." class="input-search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="title">Formulário de cadastro de produto</h1>
+
+        <div class="form-container">
+            <form action="/cadastrar-produto" method="POST" th:object="${product}" enctype="multipart/form-data">
+                
+                <input
+                    th:field="*{name}"
+                    class="input-form" 
+                    type="text"    
+                    placeholder="Nome do produto"
+                />
+
+                <br />
+                
+                <textarea
+                        th:field="*{description}"
+                    class="input-large-form" 
+                    type="text"    
+                    placeholder="Descrição do produto"
+                    resizable="f"
+                ></textarea>
+
+                <br />
+                
+                <input
+                        th:field="*{price}"
+                    class="input-form" 
+                    type="number"    
+                    placeholder="Preço do produto"
+                />
+                
+                <br />
+
+                <br />
+
+                <!--
+                <select class="input-form">
+                    <option value="Promoção">Promoção</option>
+                    <option value="Personalização">Personalização</option>
+                    <option value="Kit infantil">infantil</option>
+                    <option value="Kit de treino">Kit de treino</option>
+                    <option value="NBA">NBA</option>
+                </select>
+                -->
+
+                <br />
+
+                <input
+                        th:field="*{link}"
+                    class="input-form" 
+                    type="text"    
+                    placeholder="link do produto"
+                />
+
+                <br />
+
+                <input
+                    type="file"
+                    name="file"
+                    placeholder="Imagem"
+                />
+
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
